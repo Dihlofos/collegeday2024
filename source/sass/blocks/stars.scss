@@ -1,0 +1,102 @@
+.stars {
+  padding: 7.7rem 0 17.5rem;
+
+  @media (max-width: $tablet) {
+    padding: 7.7rem 0 10.5rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 2.5rem 0 0;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__slider-container {
+    margin: 0 -2rem;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: -18.3rem;
+    left: -21.6rem;
+    z-index: 3;
+
+    @media (max-width: $tablet) {
+      bottom: -12.3rem;
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__right-gradient {
+    position: absolute;
+    top: -127rem;
+    right: -190rem;
+    z-index: 2;
+  }
+
+  &__right-decor {
+    position: absolute;
+    top: 6rem;
+    right: -24.5rem;
+    z-index: 3;
+
+    @media (max-width: $tablet) {
+      right: -20rem;
+    }
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    z-index: 3;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    flex-grow: 1;
+  }
+
+  &__nav {
+    flex-grow: 0;
+    max-width: 58.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-right: 2.5rem;
+
+    .swiper__nav {
+      display: flex;
+      gap: 1rem
+    }
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+      max-width: 38.5rem;
+    }
+  }
+
+  &__descr {
+    margin: 0 0 3.3rem;
+  }
+
+  .swiper__prev,
+  .swiper__next {
+    cursor: pointer;
+  }
+
+  .slider {
+    position: relative;
+    z-index: 5;
+  }
+
+
+
+}

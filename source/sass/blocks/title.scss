@@ -1,0 +1,22 @@
+.title {
+  font-weight: 700;
+  font-size: 5.4rem;
+  line-height: 1.06;
+  color: $white;
+  text-transform: uppercase;
+
+  &--black {
+    color: $black;
+  }
+
+
+  @media (max-width: $tablet) {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
