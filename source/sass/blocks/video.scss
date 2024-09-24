@@ -9,17 +9,13 @@
 
   &__video {
     display: block;
-    max-width: 98rem;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-
-    @media (max-width: $mobile) {
-      height: 30rem;
-      max-width: 100%;
+    height: 100%;
       width: 100%;
-    }
+
   }
 
 
