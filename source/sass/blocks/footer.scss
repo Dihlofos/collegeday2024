@@ -89,6 +89,11 @@
     max-width: 28.3rem;
   }
 
+  &__logo {
+    position: relative;
+    z-index: 5;
+  }
+
   &__right {
     width: 53.7rem;
 
