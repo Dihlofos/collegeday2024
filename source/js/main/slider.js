@@ -16,14 +16,14 @@
     breakpoints: {
       320: {
         slidesPerView: "auto",
-        loop: false,
+        loop: true,
         slidesPerView: 1,
         spaceBetween: 13,
       },
 
       738: {
         slidesPerView: "auto",
-        loop: false,
+        loop: true,
         slidesPerView: 3,
         spaceBetween: 13,
       },
