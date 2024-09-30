@@ -9,6 +9,10 @@
     color: $black;
   }
 
+  &--purple {
+    color: $purple;
+  }
+
 
   @media (max-width: $tablet) {
     font-size: 4rem;
