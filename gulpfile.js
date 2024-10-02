@@ -44,7 +44,7 @@ gulp.task("css", function () {
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(csso())
-    .pipe(rename("style3.min.css"))
+    .pipe(rename("style5.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -92,7 +92,7 @@ gulp.task("html", function () {
 gulp.task("js", function () {
   return gulp
     .src("source/js/main/*.js")
-    .pipe(concat("main.js"))
+    .pipe(concat("main3.js"))
     .pipe(gulp.dest("build/js"));
 });
 

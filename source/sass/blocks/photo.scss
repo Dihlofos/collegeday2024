@@ -1,0 +1,67 @@
+.photo {
+  position: relative;
+  z-index: 3;
+  margin-top: 5.7rem;
+
+  &__wrapper {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 0 6.7rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+
+  &__main {
+    border-radius: 66px;
+    overflow: hidden;
+    width: 49%;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      border-radius: 40px;
+    }
+
+    @media (max-width: $mobile) {
+      border-radius: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &__block {
+    border-radius: 66px;
+    overflow: hidden;
+    width: calc(50% - 0.75rem);
+    height: 24.5rem;
+
+    @media (max-width: $tablet) {
+      border-radius: 40px;
+    }
+
+    @media (max-width: $mobile) {
+      border-radius: 20px;
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__small {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
